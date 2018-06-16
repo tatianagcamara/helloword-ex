@@ -1,0 +1,72 @@
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/*  font-weight: 700;*/
+}
+
+p{
+  font-size: 8pt;
+}
+.bg-orange{
+background: #fd634e;
+}
+.bg-green{
+   background: #a2ca28;
+}
+
+.bg-darkBlue{
+    background: #0d1119;
+}
+
+
+
+
+/*ok*/
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/img-MastHead.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 28rem;
+  padding-bottom: 15rem;
+}
+/*ok*/
+
+
+.features-img {
+  min-height: 14rem;
+  background-size: cover;
+}
+
+.features  h3{
+  font-size: 12pt;
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 8pt;
+}
+
+a:hover {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
