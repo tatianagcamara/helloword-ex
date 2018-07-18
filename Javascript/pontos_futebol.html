@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+<script>
+	var pulaLinha = function() {
+	document.write("<br>");
+};
+
+var mostra = function(frase) {
+	document.write(frase); pulaLinha();
+};
+
+function calculaPontos (vitorias,empates,derrotas) {
+	return ((vitorias * 3) + empates) - derrotas;
+};
+
+var vitorias = parseInt(
+ prompt("Quantos jogos o CDC Futebol Clube venceu?"));
+var empates = parseInt(
+	prompt("Quantos jogos o CDC Futebol Clube empatou?"));
+// var pontos = (vitorias * 3) + parseInt(empates);
+var derrotas = parseInt(
+	prompt("Quantos jogos o CDC Futebol Clube perdeu?"));
+var pontos = calculaPontos(vitorias,empates,derrotas);
+
+mostra("Nosso time tem " + pontos + " pontos.");
+
+var vitoriasAdversario = parseInt(
+ prompt("Quantos jogos o Livros Velhos Futebol Clube venceu?"));
+var empatesAdversario = parseInt(
+	prompt("Quantos jogos o Livros Velhos Futebol Clube empatou?"));
+var derrotasAdversario = parseInt(
+	prompt("Quantos jogos o Livros Velhos Futebol Clube perdeu?"));
+// var pontosAdversario = (vitoriasAdversario * 3) + parseInt(empatesAdversario);
+var pontosAdversario = calculaPontos(vitoriasAdversario, empatesAdversario, derrotasAdversario);
+
+mostra("Livros Velhos Futebol Clube tem " + pontosAdversario + " pontos.");
+
+if (pontos > pontosAdversario) {
+	mostra("Nosso time está indo MELHOR que os Livros Velhos!");
+}
+
+if (pontos < pontosAdversario) {
+	mostra("Nosso time está indo PIOR que Livros Velhos");
+}
+
+if (pontos == pontosAdversario) {
+	mostra("Nosso time está EMPATADO com Livros Velhos.");
+}
+
+</script>
