@@ -1,0 +1,72 @@
+<!-- <p id="demo"></p>
+<script>
+	let cars = ["Saab","Volvo","BMW"];
+		document.getElementById("demo").innerHTML = cars[0];
+</script> -->
+
+<!-- <button onclick="myFruits()">Insira uma fruta</button>
+<p id="demo"></p>
+<script>
+	let fruits = ["Banana", "Orange", "Apple", "Mango"];
+		document.getElementById("demo").innerHTML = fruits;
+	function myFruits() {
+		fruits.push ("Kiwi");
+	document.getElementById("demo").innerHTML = fruits;
+	}
+</script> -->
+
+<!-- <p id="demo"></p>
+<script>
+	let txt = "";
+	let numbers = [4, 9, 16, 25];
+	numbers.forEach (myFunction);
+	document.getElementById("demo").innerHTML = txt;
+	function myFunction(item, index) {
+		txt = txt + item + "<br>";
+	}
+</script> -->
+
+<!-- <p id="demo"></p>
+<script>
+	let cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+	let text = "";
+	let i;
+	for (i = 0; i < cars.length; i++) {
+		text += cars[i] + "<br>";
+	}
+	document.getElementById("demo").innerHTML = text;
+</script> -->
+
+<!-- <p id="demo"></p>
+<script>
+	var person = {
+		firstName: "John",
+		lastName: "Doe",
+		age: 50
+	};
+	document.getElementById("demo").innerHTML =
+	person.firstName + person.lastName + " tem " + person.age + " anos.";
+</script> -->
+
+<!-- <p id="demo"></p>
+<script>
+	var txt = "";
+	var person = {fname:"John", lname:"Doe", age:25};
+	var x;
+	for (x in person) {
+		txt += person[x] + " ";
+	}
+	document.getElementById("demo").innerHTML = txt;
+</script> -->
+
+<p id="demo"></p>
+<script>
+	var cars = ["BMW", "Volvo", "Saab", "Ford"];
+	var i = 0;
+	var text = "";
+	while (cars[i]) {
+		text += cars[i] + "<br>";
+		i++;
+	}
+	document.getElementById("demo").innerHTML = text;
+</script>
